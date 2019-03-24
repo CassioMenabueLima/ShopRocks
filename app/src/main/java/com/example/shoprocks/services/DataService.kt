@@ -6,7 +6,7 @@ import com.example.shoprocks.model.Product
 object DataService {
 
     val category = listOf(
-        Category("SHITRTS", "shirtimage"),
+        Category("SHIRTS", "shirtimage"),
         Category("HOODIES", "hoddieimage"),
         Category("HATS", "hatimage"),
         Category("DIGITAL", "digitalgoodsimage")
