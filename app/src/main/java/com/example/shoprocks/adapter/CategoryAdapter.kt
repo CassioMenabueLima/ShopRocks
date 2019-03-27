@@ -13,10 +13,7 @@ import com.example.shoprocks.services.DataService.category
 import org.w3c.dom.Text
 import kotlin.contracts.contract
 
-class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapter() {
-
-    val context = context
-    val categories = categories
+class CategoryAdapter(val context: Context, val categories: List<Category>) : BaseAdapter() {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val categoryView: View
@@ -25,7 +22,7 @@ class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapte
         if (convertView == null){
             categoryView = LayoutInflater.from(context).inflate(R.layout.category_list_item, null)
             holder = ViewHolder()
-            holder.categoryImage = categoryView.findViewById(R.id.caregory_image)
+            holder.categoryImage = categoryView.findViewById(R.id.category_image)
             holder.categoryName = categoryView.findViewById(R.id.category_name)
 
             categoryView.tag = holder

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:orientation="vertical">
+
+    <ImageView
+            android:scaleType="center"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" app:srcCompat="@drawable/hat2" android:id="@+id/product_img"
+    />
+    <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/name_product" android:text="Beanie"
+            android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black"
+            android:typeface="normal" android:fontFamily="sans-serif-smallcaps"/>
+    <TextView
+            android:layout_gravity="center"
+            android:text="$18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/text_price"
+            android:fontFamily="sans-serif-smallcaps" android:typeface="normal" android:textSize="20sp"
+            android:textStyle="bold" android:textColor="@android:color/black"/>
+</LinearLayout>
